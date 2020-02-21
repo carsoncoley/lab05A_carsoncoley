@@ -65,8 +65,12 @@ int WordCount::incrWordCount(std::string word) {
 }
 
 int WordCount::decrWordCount(std::string word) {
-	// STUB - your solution from Lab04 goes here
-	return -2;
+	
+	string testString = makeValidWord(word);
+	if(word == ""){
+		return -1;
+	}
+	return -1;
 }
 
 
