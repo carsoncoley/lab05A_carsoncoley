@@ -45,7 +45,7 @@ int main(){
 	std::cout << "b,1" << endl;
 	std::cout << "a,2" << endl;
 	std::cout << "Actual result for DumpWordsSortedbyWord #1: " <<endl;
-	test5.dumpWordsSortedByWord(cout);
+	test5.dumpWordsSortedByWord(out);
 	test5.incrWordCount("d");
 	test5.incrWordCount("dd");
 	test5.incrWordCount("a");
@@ -55,7 +55,7 @@ int main(){
 	std::cout << "c,1" << endl;
 	std::cout << "a,3" << endl;
 	std::cout << "Actual result for DumpWordsSortedbyWord #2: " << endl;
-	test5.dumpWordsSortedByWord(cout);
+	test5.dumpWordsSortedByWord(out);
 
 	std::cout<< "Expected result for DumpWordsSortedbyOccurence #1: " << endl;
 	std::cout<<"b,1"<<endl;
@@ -64,7 +64,7 @@ int main(){
 	std::cout<<"dd,1"<<endl;
 	std::cout<<"a,3"<<endl;
 	std::cout<<"Actual result for DumpWordsSortedbyOccurence #1: "<<endl;
-	test5.dumpWordsSortedByOccurence(cout);
+	test5.dumpWordsSortedByOccurence(out);
 	
 	WordCount test6;
 	test6.incrWordCount("apple");
@@ -81,6 +81,6 @@ int main(){
 	std::cout<<"ant,2"<<endl;
 	std::cout<<"apple,3"<<endl;
 	std::cout<<"Actual result for DumpWordsSortedbyOccurence #2: "<<endl;
-	test6.dumpWordsSortedByOccurence(cout);
+	test6.dumpWordsSortedByOccurence(out);
 	return 0;
 }
