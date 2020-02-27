@@ -2,6 +2,7 @@
 #include "WordCount.h"
 #include <iostream>
 #include <cstring>
+#include <sstream>
 using namespace std;
 
 int main(){
@@ -82,5 +83,13 @@ int main(){
 	std::cout<<"apple,3"<<endl;
 	std::cout<<"Actual result for DumpWordsSortedbyOccurence #2: "<<endl;
 	test6.dumpWordsSortedByOccurence(cout);
+
+	ostringstream string;
+
+	WordCount word;
+	word.incrWordCount("hello");
+	word.dumpWordsSortedByOccurence(string);
+	cout << string.str() << endl;
+
 	return 0;
 }
