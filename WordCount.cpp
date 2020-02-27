@@ -121,7 +121,7 @@ void WordCount::dumpWordsSortedByWord(std::ostream &out) const {
 	}
 	std::sort(myVector.begin(), myVector.end());
 	for(int k = myVector.size() - 1; k >= 0; k--){
-		std::cout << myVector[k]<< "," << getWordCount(myVector[k]) << endl;
+		out << myVector[k]<< "," << getWordCount(myVector[k]) << endl;
 	}
 
 }
